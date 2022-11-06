@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,oneside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -15,15 +15,15 @@
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Analýza hry Overwatch\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2022/23, vedenie: Ing. Vladimír Mlynarovič, PhD.}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Meno Priezvisko\\[2pt]
+\author{Andrej Kotulič\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{andrej.kotulic@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 6. november 2022} % upravte
 
 
 
@@ -32,83 +32,89 @@
 \maketitle
 
 \begin{abstract}
-\ldots
+Vzhľadom na výrazný nárast herného priemyslu v posledných rokoch a tiež na relevantnosť videohier sa tento článok zameriava na analýzu populárnej hry Overwatch (2016). 
+
+Relevantnosť hry, okrem vplyvu na zábavný priemysel získala množstvo „game of the year“ ocenení, vďaka svojím úžasným herným mechanikám, stratégiám, rôznorodosti máp z celého sveta a veľkého množstva postáv (známych ako hrdinovia).
+
+V tomto článku sa zameriame na základnú štruktúru hry, možnosti rôznych módov, veľkého počtu máp navrhnutých podľa reálnych destinácií na svete a postáv, ktorých je v aktuálnej hre 35. 
+
+Taktiež sa pozrieme na esport, kde má Overwatch svoju vlastnú ligu (Overwatch League).
 \end{abstract}
 
 
 
 \section{Úvod}
 
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+Overwatch je multiplatformová „First person shooter“ vytvorená spoločnostou Blizzard Entertainment  v roku 2016.
+Od jej vzniku si hra prešla mnoho zmenami a vylepšeniami ako zmenou herných, či odmenových mechaník.
+Hra je vyvinutá pre systém PlayStation 5, PlayStation 4, Nintendo Switch, Xbox One, Xbox Series X a Series S a Microsoft Windows.
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+V hre sa stretnete s veľkým množstvom módov~\ref{Herné mechaniky} a obrovským množstvom máp ~\ref{Rôznorodosť máp}.
 
-
-
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
-
-
-
-\section{Iná časť} \label{ina}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-
-
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
-
+Do novembra 2022 sa v hre nachádza 35 postáv~\ref{Herné postavy} rozdelených do troch rolí:
 \begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
+\item Tank
+\item Damage
+\item Support
 \end{itemize}
 
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
 
 
 
-\section{Dôležitá časť} \label{dolezita}
+\section{Herné mechaniky} \label{Herné mechaniky}
+
+
+Hra sa skladá z boja medzi dvoma tímami zložených z piatich hráčov. 
+
+Keďže ide o hru pre viacerých hráčov, všetky postavy tímov sú skutoční hráči. Hráči v tíme spolupracujú online, aby dosiahli cieľ, ktorým môže byť zabezpečiť a brániť kontrolné body na mape alebo eskortovať náklad cez mapu v obmedzenom množstve času. Hra je značne interaktívna, pretože sa hrdinovia súčasťou rovnakého tímu automaticky zapájajú do dialógov s ostatnými hrdinami, pričom sa rozprávajú aj o mieste príbehu hry alebo o externom odkaze~\cite{Overwatchbook}.
+
+Okrem tohto sa v hre náchádza aj niekoľko iných módov, ktoré už ale niesú tak kompetitívne. V priebehu roka sa v hre objavuje aj niekoľko speciálnych udalostí,
+ kedy sú v hre dostupné nové mechaniky, módy, kozmetické predmety a úlohy.
+
+Tieto "eventy" trvajú približne 3 týždne a objavujú sa poďla nasledujúceho
+zoradenia: "Lunar New Year, Archives, Anniversary, Summer Games, Halloween Terror a Winter Wonderland" a niekoľko mini "eventov" ktoré sa konajú pomedzi~\cite{Overwatchbook}.
+
+
+
+Hra ďaľej disponuje obrovským množstvom kozmetických doplnkov ako napríklad "skiny, weapon charms, icons, sprays, voicelines, emotes". Overwatch
+má aj doplnok "Highlight intro" ktorý je jedinečný pre túto hru. Ide o krátky klip najlepšieho momentu, ktorý sa objavuje na konci kraždej hry.
+
+
+
+\subsection{Stratégie} \label{ina:nejake}
 
 
 
 
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+\section{Rôznorodosť máp} \label{Rôznorodosť máp}
 
 
+
+
+
+
+\section{Herné postavy} \label{Herné postavy}
+
+
+
+\section{Overwatch Esport} \label{Overwatch Esport}
+
+Termín esports pochádza z konca deväťdesiatych rokov. V súčasnosti možno tvrdiť, že esport sa stal štandardizovaným spôsobom označovania súťažných hier v rámci a aj mimo akademickej sféri. Nie je preto prekvapujúce, že definícia esportu a jeho vzťah k športom pritiahla pozornosť výskumníkov z viacerých oblastí~\cite{Overwatchesport}.
+
+V posledných rokoch sa herný priemysel neustále exponenciálne popularizuje, a tým aj esport priemysel sám o sebe. Zatiaľ čo pred niekoľkými rokmi by ste 
+našli len málokoho, kto by čo i len vedel čo to esport je, dnes je to multimiliónová scéna s milíonmi hráčov. Pre Overwatch to platí tiež.
+
+Overwatch mal aktívnu scénu už od jeho vzniku. Prvý veľký esport event bol World Cup 2016 na Blizzcone~\cite{Overwatchesport}.
+
+V roku 2018 vznikla aj samostatná liga pre túto hru s názvom Overwatch league~\ref{Overwatch league - OWL}.
+
+\subsection{Overwatch league - OWL} \label{Overwatch league - OWL}
+
+Overwatch league pozostáva z 20 tímov. 
+
+Tímy sú z miest, podobne ako vo väčšine tradičných športových líg a hoci väčšina tímov reprezentuje mestá v Spojených štátoch, existujú aj tímy, ktoré zastupujú mestá v Európe a Ázijských krajinách (dve v Európe, jedno v Južnej Kórei a štyri v Číne)~\cite{Overwatchesport}.
+
+Tieto tímy sa každú sezónu stretávaju proti sebe a bojujú a o titul najlepšieho na svete.
 
 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
